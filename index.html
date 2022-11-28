@@ -1,32 +1,342 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Changed Cats Global</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="keywords" content="html, css bootstrap, mega menu, navbar, large dropdown, menu CSS examples" />
+	<meta name="description" content="Bootstrap 5 navbar megamenu examples with simple css demo code" />
+
+	<title>Demo - Bootstrap navbar megamenu dropdown. html code example </title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+		crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="./css/index.css">
+
+	<!-- <style type="text/css">
+		.navbar .megamenu {
+			padding: 0;
+		}
+
+		/* ============ desktop view ============ */
+		@media all and (min-width: 992px) {
+
+			.navbar .has-megamenu {
+				position: static !important;
+			}
+
+			.navbar .megamenu {
+				left: 0;
+				right: 0;
+				width: 100%;
+				margin-top: 0;
+			}
+
+		}
+
+		/* ============ desktop view .end// ============ */
+
+
+		/* ============ mobile view ============ */
+		@media(max-width: 991px) {
+
+			.navbar.fixed-top .navbar-collapse,
+			.navbar.sticky-top .navbar-collapse {
+				overflow-y: auto;
+				max-height: 90vh;
+				margin-top: 10px;
+			}
+		}
+
+		/* ============ mobile view .end// ============ */
+	</style> -->
+
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function () {
+			/////// Prevent closing from click inside dropdown
+			document.querySelectorAll('.dropdown-menu').forEach(function (element) {
+				element.addEventListener('click', function (e) {
+					e.stopPropagation();
+				});
+			})
+		});
+	// DOMContentLoaded  end
+	</script>
+
 </head>
+
 <body>
-    <div class="navbar">
-        <div class="nav-title"><h1>Cats-logo</h1></div>
-        <div class="nav-menu">
-            <ul>
-                <li>TECHNOLOGY</li>
-                <li>PRODUCTS</li>
-                <li>SMART WORLD</li>
-                <li>TESTIMONIAL</li>
-                <li>MEDIA</li>
-                <li>GALLERY</li>
-                <li>ABOUT US</li>
-                <li>CONTACTS</li>
-            </ul>
-        </div>
-        <div class="hamburger">
-            <span class="material-symbols-outlined">
-                menu
-            </span>
-        </div>
-    </div>
-</body>
+	<div class="container">
+
+		<!-- ============= COMPONENT ============== -->
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#"><img src="./images/catslogo.png" alt="logo"
+						style="width: 5rem; height:2rem;"></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="main_nav">
+					<ul class="navbar-nav">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> TECHNOLOGY </a>
+							<div class="dropdown-menu dropdown-toggle">
+								<a href="#" style="text-decoration: none;">
+									<div class="drop-val"><i class="fa fa-camera-retro" style="font-size:1rem;"></i>
+										<h6 class="title">PHOTONIC TECHNOLOGY</h6>
+									</div>
+									<hr>
+								</a>
+								<a href="#" style="text-decoration: none;">
+									<div class="drop-val"><i class="fa fa-podcast" style="font-size:1rem;"></i>
+										<h6 class="title">OPTOELECTRONIC AMPLIFIER</h6>
+									</div>
+									<hr>
+								</a>
+								<a href="#" style="text-decoration: none;">
+									<div class="drop-val"><i class="fa fa-picture-o" style="font-size:1rem;"></i>
+										<h6 class="title">IMAGE PROCESSING</h6>
+									</div>
+									<hr>
+								</a>
+								<a href="#" style="text-decoration: none;">
+									<div class="drop-val"><i class="fa fa-microphone" style="font-size:1rem;"></i>
+										<h6 class="title">SOUND PROCESSING</h6>
+									</div>
+									<hr>
+								</a>
+								<a href="#" style="text-decoration: none;">
+									<div class="drop-val"><i class="fa fa-database" style="font-size:1rem;"></i>
+										<h6 class="title">BIG DATA</h6>
+									</div>
+									<hr>
+								</a>
+								<a href="#" style="text-decoration: none;">
+									<div class="drop-val"><i class="fa fa-sliders" style="font-size:1rem;"></i>
+										<h6 class="title">COMMAND & CONTROL</h6>
+									</div>
+									<hr>
+								</a>
+								<a href="#" style="text-decoration: none;">
+									<div class="drop-val"><i class="fa fa-gear" style="font-size:1rem;"></i>
+										<h6 class="title">RESEARCH & CUSTOMISATION</h6>
+									</div>
+								</a>
+							</div> <!-- dropdown-large.// -->
+						</li>
+
+						<li class="nav-item dropdown has-megamenu">
+							<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> SMART WORLD </a>
+							<div class="dropdown-menu megamenu" role="menu">
+
+								<div class="row g-3 megaM">
+									<div class="col-megamenuT">
+										<a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Hover
+											me </a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+											<li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+											<li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
+										</ul>
+									</div> <!-- col-megamenu.// -->
+									<div class="col-megamenu">
+										<h4 class="title">Title Menu One</h4>
+									</div>
+								</div>
+
+							</div> <!-- dropdown-mega-menu.// -->
+						</li>
+
+
+						<li class="nav-item dropdown has-megamenu">
+							<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> SMART WORLD </a>
+							<div class="dropdown-menu megamenu" role="menu">
+								<div class="row g-3">
+									<div class="col-lg-3 col-6">
+										<div class="col-megamenu">
+											<h6 class="title">Title Menu One</h6>
+											<ul class="list-unstyled">
+												<li><a href="#">Custom Menu</a></li>
+												<li><a href="#">Custom Menu</a></li>
+												<li><a href="#">Custom Menu</a></li>
+												<li><a href="#">Custom Menu</a></li>
+												<li><a href="#">Custom Menu</a></li>
+												<li><a href="#">Custom Menu</a></li>
+											</ul>
+										</div> <!-- col-megamenu.// -->
+									</div><!-- end col-3 -->
+									<div class="col-lg-3 col-6">
+										<div class="col-megamenu">
+											<h6 class="title">Title Menu Two</h6>
+											<ul class="list-unstyled">
+												<li><a href="#">Custom Menu</a></li>
+												<li><a href="#">Custom Menu</a></li>
+												<li><a href="#">Custom Menu</a></li>
+												<li><a href="#">Custom Menu</a></li>
+												<li><a href="#">Custom Menu</a></li>
+												<li><a href="#">Custom Menu</a></li>
+											</ul>
+										</div> <!-- col-megamenu.// -->
+									</div><!-- end col-3 -->
+									<div class="col-lg-3 col-6">
+										<div class="col-megamenu">
+											<h6 class="title">Title Menu Three</h6>
+											<ul class="list-unstyled">
+												<li><a href="#">Custom Menu</a></li>
+												<li><a href="#">Custom Menu</a></li>
+												<li><a href="#">Custom Menu</a></li>
+												<li><a href="#">Custom Menu</a></li>
+												<li><a href="#">Custom Menu</a></li>
+												<li><a href="#">Custom Menu</a></li>
+											</ul>
+										</div> <!-- col-megamenu.// -->
+									</div>
+									<div class="col-lg-3 col-6">
+										<div class="col-megamenu">
+											<h6 class="title">Title Menu Four</h6>
+											<ul class="list-unstyled">
+												<li><a href="#">Custom Menu</a></li>
+												<li><a href="#">Custom Menu</a></li>
+												<li><a href="#">Custom Menu</a></li>
+												<li><a href="#">Custom Menu</a></li>
+												<li><a href="#">Custom Menu</a></li>
+												<li><a href="#">Custom Menu</a></li>
+											</ul>
+										</div> <!-- col-megamenu.// -->
+									</div><!-- end col-3 -->
+								</div><!-- end row -->
+							</div> <!-- dropdown-mega-menu.// -->
+						</li>
+
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> TESTIMONIAL </a>
+							<div class="dropdown-menu dropdown-toggle">
+								<a href="#" style="text-decoration: none;">
+									<div class="drop-val"><i class="fa fa-envelope" style="font-size:1rem;"></i>
+										<h6 class="title">APPRECIATION</h6>
+									</div>
+									<hr>
+								</a>
+								<a href="#" style="text-decoration: none;">
+									<div class="drop-val"><i class="fa fa-certificate" style="font-size:1rem;"></i>
+										<h6 class="title">CERTIFICATION</h6>
+									</div>
+									<hr>
+								</a>
+								<a href="#" style="text-decoration: none;">
+									<div class="drop-val"><i class="fa fa-commenting-o" style="font-size:1rem;"></i>
+										<h6 class="title">VALIDATION</h6>
+									</div>
+									<hr>
+								</a>
+								<a href="#" style="text-decoration: none;">
+									<div class="drop-val"><i class="fa fa-trophy" style="font-size:1rem;"></i>
+										<h6 class="title">RECOGNITION / AWARDS</h6>
+									</div>
+								</a>
+							</div> <!-- dropdown-large.// -->
+						</li>
+
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> MEDIA </a>
+							<div class="dropdown-menu dropdown-toggle">
+								<a href="#" style="text-decoration: none;">
+									<div class="drop-val"><i class="fa fa-newspaper-o" style="font-size:1rem;"></i>
+										<h6 class="title">NEWS</h6>
+									</div>
+									<hr>
+								</a>
+								<a href="#" style="text-decoration: none;">
+									<div class="drop-val"><i class="fa fa-file-text-o" style="font-size:1rem;"></i>
+										<h6 class="title">MAGAZINE</h6>
+									</div>
+									<hr>
+								</a>
+								<a href="#" style="text-decoration: none;">
+									<div class="drop-val"><i class="fa fa-book" style="font-size:1rem;"></i>
+										<h6 class="title">PUBLICATION</h6>
+									</div>
+									<hr>
+								</a>
+								<a href="#" style="text-decoration: none;">
+									<div class="drop-val"><i class="fa fa-linkedin" style="font-size:1rem;"></i>
+										<h6 class="title">LINKEDIN</h6>
+									</div>
+									<hr>
+								</a>
+								<a href="#" style="text-decoration: none;">
+									<div class="drop-val"><i class="fa fa-youtube" style="font-size:1rem;"></i>
+										<h6 class="title">YOUTUBE</h6>
+									</div>
+								</a>
+
+							</div> <!-- dropdown-large.// -->
+						</li>
+
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> GALLERY </a>
+							<div class="dropdown-menu dropdown-toggle">
+								<a href="#" style="text-decoration: none;">
+									<div class="drop-val"><i class="fa fa-video-camera" style="font-size:1rem;"></i>
+										<h6 class="title">VIDEO</h6>
+									</div>
+									<hr>
+								</a>
+								<a href="#" style="text-decoration: none;">
+									<div class="drop-val"><i class="fa fa-photo" style="font-size:1rem;"></i>
+										<h6 class="title">PHOTO</h6>
+									</div>
+								</a>
+							</div> <!-- dropdown-large.// -->
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> ABOUT US </a>
+							<div class="dropdown-menu dropdown-toggle">
+								<a href="#" style="text-decoration: none;">
+									<div class="drop-val"><i class="fa fa-dot-circle-o" style="font-size:1rem;"></i>
+										<h6 class="title">VISION / MISSION</h6>
+									</div>
+									<hr>
+								</a>
+								<a href="#" style="text-decoration: none;">
+									<div class="drop-val"><i class="fa fa-users" style="font-size:1rem;"></i>
+										<h6 class="title">TEAM</h6>
+									</div>
+									<hr>
+								</a>
+								<a href="#" style="text-decoration: none;">
+									<div class="drop-val"><i class="fa fa-users" style="font-size:1rem;"></i>
+										<h6 class="title">QUALITY</h6>
+									</div>
+									<hr>
+								</a>
+								<a href="#" style="text-decoration: none;">
+									<div class="drop-val"><i class="fa fa-users" style="font-size:1rem;"></i>
+										<h6 class="title">SHM/NDT</h6>
+									</div>
+								</a>
+							</div> <!-- dropdown-large.// -->
+						</li>
+
+						<li class="nav-item"><a class="nav-link" href="#"> CONTACT </a></li>
+
+
+					</ul>
+
+				</div> <!-- navbar-collapse.// -->
+			</div> <!-- container-fluid.// -->
+		</nav>
+		<!-- ============= COMPONENT END// ============== -->
+
+
+	</div><!-- container //  -->
+
+	<h1>Hello</h1>
+	</body>
+
 </html>
