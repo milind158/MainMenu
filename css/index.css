@@ -186,7 +186,7 @@ h6 {
     margin: 0;
   }
 
-  .nav a:hover, .drop-Menu:hover
+  .drop-Menu:hover
   .drop-button{
     background-color: rgb(221, 196, 11);
   }
@@ -240,4 +240,130 @@ h6 {
       width: 100%;
       height: auto;
     }
+  }
+
+
+
+/* ----------envir content---------- */
+.envir-classes{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.envir-body{
+    width: 50%;
+}
+#myVideo {
+    position: fixed;
+    min-width: fit-content;
+    min-height: fit-content;
+  }
+.envir-content {
+    position: fixed;
+  color: #f1f1f1;
+  width: fit-content;
+  padding: 20px;
+  width: fit-content;
+  }
+  .envir-megaContent{
+    display: flex;
+    flex-direction: row;
+  }
+.envir-megaContent{
+    display: none;
+}
+.envir-body:hover .envir-megaContent{
+    display:flex;
+    width: max-content;
+    transition: 1s
+}
+
+
+/* ------------MegaMenu 2---------------- */
+.mega-drop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10rem 1rem 4rem;
+}
+/* .megaTitle-content{
+    height: fit-content;
+    width: fit-content;
+} */
+.megaTitle-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.drop-title{
+    margin-bottom: 1rem;
+    color: #fff;
+    font-weight: 30;
+    font-weight: bolder;
+}
+#video-bg {
+    width: 350px;
+    height: 200px;
+  }
+  
+  div#video-bg video {
+    object-fit: cover;
+  }
+  .vid{
+    width: 100%;
+    height: 100%;
+  }
+
+  .megaOption ul{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    list-style-type:none;
+  }
+  .megaOption ul a li{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Courier Prime', monospace;
+  }
+  .megaOption ul a li:hover{
+    color: yellow;
+    text-decoration: underline;
+    transition: 0.5s;
+  }
+  .megaOption ul a{
+    padding: 0.2rem 0;
+  }
+
+  .con{
+    
+    background-image: url("./menu_con.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .sec{
+    background-image: url("./menu_sec.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .hea{
+    background-image: url("./menu_hea.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .city{
+    background-image: url("./sm_cit.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
